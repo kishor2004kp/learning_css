@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transition: transform 5s;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+        .box1:hover{
+            transform: translateX(100px);
+        }
+        .box2:hover{
+            transform: translateY(100px);
+        }
+        .box3:hover{
+            transform: rotate(100deg);
+        }
+        .box4:hover{
+            transform: scale(2);
+        }
+        .box5:hover{
+            transform: skew(20deg, 20deg);
+        }
+        .box6:hover{
+            transform: perspective(100px) rotateX(100deg);
+        }
+        .box7:hover{
+            transform: perspective(100px) rotateY(100deg);
+        }
+        .box8:hover{
+            transform: perspective(100px) rotateZ(100deg);
+        }
+        .box9:hover{
+            transform: perspective(100px) rotateX(100deg) rotateY(100deg) rotateZ(100deg);
+        }
+        .box10:hover{
+            transform: perspective(100px) rotateX(100deg) rotateY(100deg) rotateZ(100deg) translateX(100px) translateY(100px) translateZ(100px);
+        }
+        .box11:hover{
+            transform: translate(100px, 100px);
+        }
+        .box12:hover{
+            transform: scaleX(2);
+        }
+        .box13:hover{
+            transform: scaleY(2);
+        }
+        .box14:hover{
+            transform: perspective(100px);
+        }
+        .box15:hover{
+            transform: rotateX(100deg);
+        }
+
+       
+   
+
+    </style>
+</head>
+<body>
+    <div class="flex">
+    <div class="box box1">translateX</div>
+    <div class="box box2">translateY</div>
+    <div class="box box3">rotate</div>
+    <div class="box box4">scale</div>
+    <div class="box box5">skew</div>
+    <div class="box box6">perspective rotateX</div>
+    <div class="box box7">perspective rotateY</div>
+    <div class="box box8">perspective rotateZ</div>
+    <div class="box box9">perspective rotateX rotateY rotateZ</div>
+    <div class="box box10">perspective translateX translateY translateZ rotateX rotateY rotateZ</div>
+    <div class="box box11">translate</div>
+    <div class="box box12">scaleX</div>
+    <div class="box box13">scaleY</div>
+    <div class="box box14">perspective</div>
+    <div class="box box15">rotate</div>
+    </div>
+</body>
+</html>
