@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .swing{
+            animation: swing 1.5s ease-in-out infinite alternate;
+            transform-origin: top center;
+            position: relative;
+        }
+        .swing img{
+                 width: 300px;
+                 border: 3px solid gray;
+                 box-shadow:1px 1px 5px black ;
+        }
+        @keyframes swing{
+            0%{transform: rotate(7deg);}
+            100%{transform: rotate(-7deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="swing img">
+    <img class="swing" src="images/dog.jpg">
+    </div>
+</body>
+</html>

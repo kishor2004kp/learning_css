@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+                font-size: 20px;
+                background-color: black;
+         }
+         
+        @media(min-width: 320px) and (max-width: 767px){
+           
+            
+            p{
+                display: none;
+            }
+            h1,h3{
+                color: yellow;
+
+            }
+            .img1{
+                display: none;
+            }
+        }
+        @media (min-width:850px) and (max-width:950px){
+            body{
+                background-color: purple;
+
+            }
+            h1,h3{
+                color: aqua;
+                font-size: 100px;
+            }
+            .img1{
+                display: none;
+            }
+
+        }
+         @media (min-width:950px) and (max-width:1144px){
+            body{
+                background-color:green;
+
+            }
+            h1,h3{
+                color:white;
+                font-size: 100px;
+            }
+            .img1{
+                display: none;
+            }
+            
+        }
+               
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugiat dolore animi id quis itaque maiores. Quo id ipsum sit consequuntur molestiae quibusdam libero, incidunt vel sint illum praesentium eius.</p>
+    <h1>CSS media query</h1>
+    <p>The background will change according to the viewport width change.</p><br><br>
+    <img src="images/cat1.webp" alt="social" width="300px">
+    <h3>Smartphones<span class="details">form 320px and up</span>(min-width:320px) </h3>
+    <p>red</p>
+
+</body>
+</html>
